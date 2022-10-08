@@ -28,7 +28,7 @@ FrmsRouter.get("/:value", async (req, res, next) => {
 
     const returnValue = {
         status: StatusCode.OK,
-        message: `Value: ${value}.`,
+        value,
     };
 
     return res.status(200).json(returnValue);
